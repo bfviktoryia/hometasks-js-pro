@@ -11,27 +11,6 @@
 //     goalkeeper: boolean;
 // }
 
-// class FootballPlayer {    
-    
-// private _name : string; 
-// private _age : number; 
-// private _goalkeeper : boolean; 
-
-
-// constructor(
-//     PlayerName: string,
-//     PlayerAge: number,
-//     PlayerGoalkeeper: boolean = true,
-// )
-// {
-//     this._name = PlayerName;
-//     this._age = PlayerAge;
-//     this._goalkeeper = PlayerGoalkeeper;
-// }
-// }
-
-// let player = new FootballPlayer("Luka", 21, true);
-// console.log(`name: ${player.name}  age: ${player.age}`); 
 
 class FootballPlayer {    
 private _name : string = "Tom"; 
@@ -86,7 +65,6 @@ private _position : string = "central";
 		this._position = value;
 	}
  
-
 }
 let player = new FootballPlayer();
 console.log(`name: ${player.name}  age: ${player.age}`); 
