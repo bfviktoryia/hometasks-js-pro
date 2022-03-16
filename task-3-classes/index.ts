@@ -16,6 +16,9 @@ class FootballPlayer {
 private _name : string = "Tom"; 
 private _age : number = 18; 
 private _position : string = "central"; 
+print()
+{console.log(`name: ${player.name}  age: ${player.age}`)
+};
 
     /**
      * Getter name
@@ -67,7 +70,9 @@ private _position : string = "central";
  
 }
 let player = new FootballPlayer();
-console.log(`name: ${player.name}  age: ${player.age}`); 
+player.print();
+
+// console.log(`name: ${player.name}  age: ${player.age}`); 
 
 
 
