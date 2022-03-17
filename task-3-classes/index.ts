@@ -5,17 +5,12 @@
 // Доступ к полям на запись осуществлять через set-функции с проверкой корректности входных данных.
 // В классе должны быть три разнотипных поля.
 
-// interface FootballPlayer {
-//     name: string;
-//     age: number;
-//     goalkeeper: boolean;
-// }
-
 
 class FootballPlayer {    
 private _name : string = "Tom"; 
 private _age : number = 18; 
 private _position : string = "central"; 
+
 print()
 {console.log(`name: ${player.name}  age: ${player.age}`)
 };
@@ -69,23 +64,9 @@ print()
 	}
  
 }
+
 let player = new FootballPlayer();
 player.print();
 
-// console.log(`name: ${player.name}  age: ${player.age}`); 
 
-
-
-// class Team {
-//     name : string;
-//     constructor (name: string) {this.name = name;}
-// }
-
-// class FootballPlayer extends Team {
-// private position: string;
-// constructor(name: string, position: string){
-//     super(name);
-//     this.position = position;
-// }
-// }
 

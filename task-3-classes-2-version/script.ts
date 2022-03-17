@@ -11,28 +11,23 @@ private _name : string;
 private _age : number; 
 private _goalkeeper : boolean; 
 
+constructor(
+    PlayerName: string,
+    PlayerAge: number,
+    PlayerGoalkeeper: boolean,
+)
+{
+    this._name = PlayerName;
+    this._age = PlayerAge;
+    this._goalkeeper = PlayerGoalkeeper;
+}
+
     /**
      * Getter name
      * @return {string}
      */
 	public get name(): string {
 		return this._name;
-	}
-
-    /**
-     * Getter age
-     * @return {number}
-     */
-	public get age(): number {
-		return this._age;
-	}
-
-    /**
-     * Getter goalkeeper
-     * @return {boolean}
-     */
-	public get goalkeeper(): boolean {
-		return this._goalkeeper;
 	}
 
     /**
@@ -43,34 +38,52 @@ private _goalkeeper : boolean;
 		this._name = value;
 	}
 
-    /**
-     * Setter age
-     * @param {number} value
-     */
-	public set age(value: number) {
-		this._age = value;
-	}
+//  get PlayerName(){
+//     return this._name;
+// }
 
-    /**
-     * Setter goalkeeper
-     * @param {boolean} value
-     */
-	public set goalkeeper(value: boolean) {
-		this._goalkeeper = value;
-	}
+//  set PlayerName(value: string){
+//     if(value.length < 3){
+// console.log("Incorrect Name");
+//     }
+//     else{
+//         this._name = value;
+//     }
+// }
 
-
-constructor(
-    PlayerName: string,
-    PlayerAge: number,
-    PlayerGoalkeeper: boolean = true,
-)
-{
-    this._name = PlayerName;
-    this._age = PlayerAge;
-    this._goalkeeper = PlayerGoalkeeper;
-}
+/**
+ * Getter age
+ * @return {number}
+ */
+public get age(): number {
+    return this._age;
 }
 
+/**
+ * Getter goalkeeper
+ * @return {boolean}
+ */
+public get goalkeeper(): boolean {
+    return this._goalkeeper;
+}
+
+
+/**
+ * Setter age
+ * @param {number} value
+ */
+public set age(value: number) {
+    this._age = value;
+}
+
+/**
+ * Setter goalkeeper
+ * @param {boolean} value
+ */
+public set goalkeeper(value: boolean) {
+    this._goalkeeper = value;
+}
+
+}
 let player = new FootballPlayer("Luka", 21, true);
 console.log(`name: ${player.name}  age: ${player.age}  goalkeeper: ${player.goalkeeper}`); 
