@@ -23,7 +23,7 @@ constructor(
 }
 
 
- get name(){
+ get name(): string{
     return this._name;
 }
 
@@ -35,7 +35,7 @@ console.log("Incorrect Name");
         this._name = value;
     }
 }
-get age(){
+get age(): number{
     return this._age;
 }
 
@@ -48,7 +48,7 @@ console.log("Incorrect Age");
     }
 }
 
-get goalkeeper(){
+get goalkeeper(): boolean{
     return this._goalkeeper;
 }
 
